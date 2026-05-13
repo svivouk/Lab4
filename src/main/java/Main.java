@@ -25,8 +25,8 @@ public class Main {
         System.out.println(Fifth.Factorial(num));
 //6 За допомогою лямбда-виразу розрахуйте множення та підсумовування всіх елементів у
 //списку цілих чисел
-        System.out.println(Sixth.sum(numbers));
-        Sixth.mult(numbers);
+        System.out.println("Sum: " + Sixth.sum(numbers));
+        System.out.println("Multiply: " + Sixth.mult(numbers));
 //7 За допомогою лямбда-виразу, розрахуйте квадрат кожного числа у списку цілих чисел
         System.out.println(Seventh.Square(numbers));
 //8 Використовуючи лямбда-вираз для сортування рядків на основі їх довжини в порядку
