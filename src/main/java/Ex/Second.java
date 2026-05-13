@@ -1,12 +1,12 @@
 package Ex;
 
 import java.util.List;
+import java.util.OptionalDouble;
 
 public class Second{
-    public static void Averege(List<Integer> numbers){
-        java.util.OptionalDouble avg = numbers.stream()
+    public static OptionalDouble Averege(List<Integer> numbers){
+        return numbers.stream()
                 .mapToDouble(n-> n)
                 .average();
-        System.out.println("Avg: " + avg);
     }
 }

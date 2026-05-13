@@ -14,36 +14,44 @@ public class Main {
         Integer num = 10;
 
 //1 Використовуючи лямбда-вираз, відфільтрувати непарні числа зі списку цілих чисел
-        First.oddNums(numbers);
+        System.out.println(First.oddNums(numbers));
 //2 Використовуючи лямбда-вираз, знайти середнє зі списку дійсних значень
-        Second.Averege(numbers);
+        System.out.println(Second.Averege(numbers));
 //3 Використовуючи лямбда-вираз для сортування списку рядків в алфавітному порядку
         Third.AplhOrder(words);
 //4 Використовуючи лямбда-вираз для обчислення суми всіх парних чисел
-        Fourth.SumOfEven(numbers);
+       System.out.println(Fourth.SumOfEven(numbers));
 //5 Використовуючи лямбда-вираз, обчислити факторіал заданого числа
-        Fifth.Factorial(num);
+        System.out.println(Fifth.Factorial(num));
 //6 За допомогою лямбда-виразу розрахуйте множення та підсумовування всіх елементів у
 //списку цілих чисел
-        Sixth.sum(numbers);
+        System.out.println(Sixth.sum(numbers));
         Sixth.mult(numbers);
 //7 За допомогою лямбда-виразу, розрахуйте квадрат кожного числа у списку цілих чисел
-        Seventh.Square(numbers);
+        System.out.println(Seventh.Square(numbers));
 //8 Використовуючи лямбда-вираз для сортування рядків на основі їх довжини в порядку
 //зростання
-        Eighth.OrderByLength(words);
+        System.out.println(Eighth.OrderByLength(words));
 //9 За допомогою лямбда-виразу підрахуйте кількість слів у реченні (слова розділені
 //пробілами)
-        Nineth.SpacesInString(s);
+       System.out.println(Nineth.SpacesInString(s));
 //10. Використовуючи лямбда-вираз, знайти перший непорожній рядок у списку рядків
-        Tenth.IsNullIn(withNull);
+        Tenth.IsNullIn(withNull).ifPresentOrElse(
+                line -> System.out.println("not null String: " + line),
+                () -> System.out.println("can't find not null")
+        );
 //11. За допомогою лямбда-виразу перевірити, чи всі рядки у списку починаються з великої
 //літери
-        Eleventh.isBigLetters(words);
+        if(Eleventh.isBigLetters(words)){
+            System.out.println("All words start with big letter");
+        }
+        else {
+            System.out.println("All words do not start with big letter");
+        }
 //12. Використовуючи лямбда-вираз, знайти друге за величиною число в списку цілих чисел
-        Twelfth.SecondBiggestNum(numbers);
+        System.out.println(Twelfth.SecondBiggestNum(numbers));
 
 //13. Використовуючи лямбда-вираз, знайти найбільше парне число в списку цілих чисел
-        Thirteenth.maxEven(numbers);
+        System.out.println(Thirteenth.maxEven(numbers));
     }
 }
