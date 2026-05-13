@@ -5,7 +5,7 @@ import java.util.List;
 public class Sixth {
     public static Integer sum(List<Integer> numbers){
         return numbers.stream()
-                .reduce(0 ,(a, b)-> a+b);
+                .reduce(0 ,Integer::sum);
     }
     public static Integer mult(List<Integer> numbers){
         return numbers.stream()
